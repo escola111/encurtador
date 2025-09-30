@@ -1,0 +1,34 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+    
+.historico {
+    font-size: 25;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 600px;
+    padding: 30px;
+    color: #333;
+    z-index: 0;
+}
+
+.historico::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url(https://img.freepik.com/fotos-premium/lado-esquerdo-do-icone-do-historico-em-fundo-branco_187299-40164.jpg) no-repeat center;
+    background-size: contain;
+    opacity: 0.5; 
+    z-index: -1;
+}
