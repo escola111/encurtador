@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encurtador</title>
+    <link rel="stylesheet" href="/css/inicio.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <a href="/html/historico.html"
+        ><i class="fa-solid fa-clock-rotate-left"></i
+      ></a>
+      <h1>Encurtador de Link</h1>
+      <form>
+        <input type="url" placeholder="Cole seu link aqui..." required />
+        <button type="submit">Encurtar</button>
+      </form>
+      <div class="resultado">
+        <p id="linkEncurtado">Seu link encurtado aparecerá aqui</p>
+        <button id="botaoCopiar" style="display: block">Copiar</button>
+      </div>
+    </div>
+    <script src="butao.js"></script>
+  </body>
+</html>

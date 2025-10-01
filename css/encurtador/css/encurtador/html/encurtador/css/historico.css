@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.voltar {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 26px;
+  background-color: #0059ff;
+  border-radius: 3px;
+  padding: 10px 15px;
+}
+
+.voltar a {
+  color: white;
+}
+
+.historico {
+  font-size: 25px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  height: 600px;
+  padding: 30px;
+  color: #333;
+  z-index: 0;
+}
+.historico a {
+  display: block;
+  color: #0059ff;
+  text-decoration: none;
+  margin: 10px 0;
+  font-weight: bold;
+  font-size: 20px;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+.title {
+  margin-bottom: 20px;
+  color: #222;
+  font-size: 36px;
+  text-align: center;
+  border-bottom: 2px solid #0059ff;
+  padding-bottom: 10px;
+  font-family: "Arial", sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.historico::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(https://img.freepik.com/fotos-premium/lado-esquerdo-do-icone-do-historico-em-fundo-branco_187299-40164.jpg)
+    no-repeat center;
+  background-size: contain;
+  opacity: 0.5;
+  z-index: -1;
+}
